@@ -1,0 +1,41 @@
+2025-01-11 01:38:59,895 -  File Hasan_Mhowwala_SEResume.pdf succesfully uploaded
+2025-01-11 17:30:11,656 -  File SJSU Mail - Enterprise Technologies - Spring 2025 Enrollment Instructions.pdf succesfully uploaded
+2025-01-11 17:30:39,338 - SJSU Mail - Enterprise Technologies - Spring 2025 Enrollment Instructions.pdf downloaded successfully
+2025-01-11 17:31:06,142 - SJSU Mail - Enterprise Technologies - Spring 2025 Enrollment Instructions.pdf downloaded successfully
+2025-01-11 20:11:16,343 -  File Hasan_Mhowwala_Resume (20).pdf succesfully uploaded
+2025-01-11 20:11:16,628 - HTTP Request: POST http://127.0.0.1:8001/replicate "HTTP/1.1 422 Unprocessable Entity"
+2025-01-11 20:11:16,860 - HTTP Request: POST http://127.0.0.1:8002/replicate "HTTP/1.1 422 Unprocessable Entity"
+2025-01-11 20:11:16,860 -  File Hasan_Mhowwala_Resume (20).pdf replicated successsfully
+2025-01-11 20:12:33,765 - The download wasn't successfull
+2025-01-11 20:49:58,291 -  File SJSU Mail - Enterprise Technologies - Spring 2025 Enrollment Instructions.pdf succesfully uploaded
+2025-01-11 20:49:59,138 - Failed to replicate to http://127.0.0.1:8001 : expected string or bytes-like object, got 'UploadFile'
+2025-01-11 20:49:59,748 - Failed to replicate to http://127.0.0.1:8002 : expected string or bytes-like object, got 'UploadFile'
+2025-01-11 20:49:59,748 -  File SJSU Mail - Enterprise Technologies - Spring 2025 Enrollment Instructions.pdf replicated successsfully
+2025-01-11 20:57:06,421 -  File hpse.pdf succesfully uploaded
+2025-01-11 20:57:07,025 - HTTP Request: POST http://127.0.0.1:8001/replicate "HTTP/1.1 422 Unprocessable Entity"
+2025-01-11 20:57:07,437 - HTTP Request: POST http://127.0.0.1:8002/replicate "HTTP/1.1 422 Unprocessable Entity"
+2025-01-11 20:57:07,437 -  File hpse.pdf replicated successsfully
+2025-01-11 21:03:26,520 -  File Amatulla Copy Test.pptx succesfully uploaded
+2025-01-11 21:03:27,138 - File Amatulla Copy Test.pptx replicated succesfully to node
+2025-01-11 21:03:27,152 - HTTP Request: POST http://127.0.0.1:8001/replicate "HTTP/1.1 200 OK"
+2025-01-11 21:03:28,037 - File Amatulla Copy Test.pptx replicated succesfully to node
+2025-01-11 21:03:28,058 - HTTP Request: POST http://127.0.0.1:8002/replicate "HTTP/1.1 200 OK"
+2025-01-11 21:03:28,058 -  File Amatulla Copy Test.pptx replicated successsfully
+2025-01-11 21:06:39,772 - The download wasn't successfull
+2025-01-11 21:06:51,046 - The download wasn't successfull
+2025-01-11 21:07:05,457 - Amatulla Copy Test.pptx downloaded successfully
+2025-01-11 21:19:52,174 -  File 12439_3_6704960_1732521300_AWS Course Completion Certificate.pdf succesfully uploaded
+2025-01-11 21:19:52,787 - File 12439_3_6704960_1732521300_AWS Course Completion Certificate.pdf replicated succesfully to node
+2025-01-11 21:19:52,792 - HTTP Request: POST http://127.0.0.1:8001/replicate "HTTP/1.1 200 OK"
+2025-01-11 21:19:53,083 - File 12439_3_6704960_1732521300_AWS Course Completion Certificate.pdf replicated succesfully to node
+2025-01-11 21:19:53,086 - HTTP Request: POST http://127.0.0.1:8002/replicate "HTTP/1.1 200 OK"
+2025-01-11 21:19:53,087 -  File 12439_3_6704960_1732521300_AWS Course Completion Certificate.pdf replicated successsfully
+2025-01-11 21:20:25,072 - 12439_3_6704960_1732521300_AWS Course Completion Certificate.pdf downloaded successfully
+2025-01-11 21:20:35,087 - 12439_3_6704960_1732521300_AWS Course Completion Certificate.pdf downloaded successfully
+2025-01-11 23:12:10,834 -  File Video-888.mp4 succesfully uploaded
+2025-01-11 23:12:11,400 - File Video-888.mp4 replicated succesfully to node
+2025-01-11 23:12:11,403 - HTTP Request: POST http://127.0.0.1:8001/replicate "HTTP/1.1 200 OK"
+2025-01-11 23:12:11,869 - File Video-888.mp4 replicated succesfully to node
+2025-01-11 23:12:11,883 - HTTP Request: POST http://127.0.0.1:8002/replicate "HTTP/1.1 200 OK"
+2025-01-11 23:12:11,884 -  File Video-888.mp4 replicated successsfully
+2025-01-11 23:12:28,771 - Video-888.mp4 downloaded successfully
