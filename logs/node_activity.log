@@ -39,3 +39,16 @@
 2025-01-11 23:12:11,883 - HTTP Request: POST http://127.0.0.1:8002/replicate "HTTP/1.1 200 OK"
 2025-01-11 23:12:11,884 -  File Video-888.mp4 replicated successsfully
 2025-01-11 23:12:28,771 - Video-888.mp4 downloaded successfully
+2025-01-12 00:00:13,941 -  File Mhowwala-Hasan 017456127 candidacy-enterprise1 (3) (1).pdf succesfully uploaded
+2025-01-12 00:00:14,367 - File Mhowwala-Hasan 017456127 candidacy-enterprise1 (3) (1).pdf replicated succesfully to node
+2025-01-12 00:00:14,369 - HTTP Request: POST http://127.0.0.1:8001/replicate "HTTP/1.1 200 OK"
+2025-01-12 00:00:14,669 - File Mhowwala-Hasan 017456127 candidacy-enterprise1 (3) (1).pdf replicated succesfully to node
+2025-01-12 00:00:14,672 - HTTP Request: POST http://127.0.0.1:8002/replicate "HTTP/1.1 200 OK"
+2025-01-12 00:00:14,673 -  File Mhowwala-Hasan 017456127 candidacy-enterprise1 (3) (1).pdf replicated successsfully
+2025-01-12 00:00:32,167 - Mhowwala-Hasan 017456127 candidacy-enterprise1 (3) (1).pdf downloaded successfully
+2025-01-12 08:53:37,004 - Node registration successfull
+2025-01-12 08:53:37,006 - HTTP Request: POST http://127.0.0.1:8000/register "HTTP/1.1 200 OK"
+2025-01-12 08:55:58,988 - Node registration successfull
+2025-01-12 08:55:58,989 - HTTP Request: POST http://127.0.0.1:8000/register "HTTP/1.1 200 OK"
+2025-01-12 09:00:26,775 - Node registration successfull
+2025-01-12 09:00:26,777 - HTTP Request: POST http://127.0.0.1:8000/register "HTTP/1.1 200 OK"

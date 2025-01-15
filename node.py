@@ -14,20 +14,23 @@ args = parser.parse_args()
 port = args.port
 
 STORAGE_DIR = f"storage/node_storage{port}"
-OTHER_NODES = ["http://127.0.0.1:8001", "http://127.0.0.1:8002"]
 DISCOVERY_SERVER_URL = "http://127.0.0.1:8000/register"
 
 os.makedirs(STORAGE_DIR,exist_ok=True)
 
 app = FastAPI()
 
-# async def node_discovery():
-#     async with httpx.AsyncClient as client:
-#         node_info = {"ip":"127.0.0.0", "port":port}
-#         await client.post(
-#             DISCOVERY_SERVER_URL,
-#             json=node_info
-#         )
+async def node_discovery():
+    async with httpx.AsyncClient() as client:
+        node_info = {"ip":"127.0.0.1", "port":port}
+        await client.post(
+            DISCOVERY_SERVER_URL,
+            json=node_info
+        )
+
+@app.on_event("startup")
+async def on_stratup():
+    await node_discovery()
 
 @app.get("/")
 def read_root():
@@ -57,16 +60,22 @@ async def upload_file(file:UploadFile = File(...)):
             f.write(content)
         logging.info(f" File {file.filename} succesfully uploaded")
 
-        for url in OTHER_NODES:
-            try:
-                async with httpx.AsyncClient() as client:
-                    files = {"file":(file.filename,content)}
-                    await client.post(
-                    f"{url}/replicate",
-                    files=files                   
-                    )
-            except Exception as e:
-                logging.error(f"Failed to replicate to {url} : {e}")
+        async with httpx.AsyncClient() as client:
+            files = {"file":(file.filename,content)}
+            response = client.get(f"{DISCOVERY_SERVER_URL}/nodes")
+            nodes = response.json()
+
+            for node in nodes:
+                try:
+                    if node["port"]!=port:
+                        await client.post(
+                            f"http://{node['ip']}:{node['port']}/replicate",
+                            files = files
+                        )
+                except httpx.HTTPStatusError as e:
+                    logging.error(f"Failed to replicate to {node['ip']}:{node['port']} - {e}")
+
+
         logging.info(f" File {file.filename} replicated successsfully")
         return {"response":f"{file.filename} succesfully uploaded and replicated"}
     except Exception as e:
